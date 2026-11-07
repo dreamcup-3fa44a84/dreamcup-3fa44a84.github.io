@@ -1,0 +1,593 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>91直播-直播平台推荐与热门直播间_主播互动与观看指南</title>
+<meta name="description" content="91直播相关内容专题，汇总热门直播间推荐、主播互动玩法、分类观看指南与最新直播动态，帮助观众快速了解91直播的内容类型、观看方式与选择思路，适合想找直播内容、关注主播动态与平台体验的用户参考收藏。">
+<meta name="keywords" content="91直播,直播间推荐,主播互动,直播平台,观看指南">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f1b2d'/%3E%3Ccircle cx='32' cy='30' r='11' fill='none' stroke='%23ff5470' stroke-width='4'/%3E%3Cpath d='M27 24l12 6-12 6z' fill='%23ffd166'/%3E%3Crect x='18' y='48' width='28' height='5' rx='2.5' fill='%234dd0e1'/%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#0d1424;
+  --bg-soft:#131d33;
+  --panel:#18233c;
+  --panel-2:#1e2b48;
+  --line:rgba(255,255,255,.08);
+  --txt:#e8edf7;
+  --txt-2:#a7b4cc;
+  --txt-3:#7d8aa3;
+  --brand:#ff5470;
+  --brand-2:#ffd166;
+  --cyan:#4dd0e1;
+  --violet:#8b7cf6;
+  --radius:16px;
+  --shadow:0 10px 30px rgba(0,0,0,.35);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,-apple-system,sans-serif;
+  background:
+    radial-gradient(1000px 500px at 85% -10%,rgba(139,124,246,.18),transparent 60%),
+    radial-gradient(900px 480px at 0% 0%,rgba(255,84,112,.14),transparent 60%),
+    var(--bg);
+  color:var(--txt);
+  line-height:1.75;
+  font-size:15px;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+img{max-width:100%}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+.sec{padding:52px 0}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:26px;flex-wrap:wrap}
+.sec-head h2{font-size:24px;letter-spacing:.5px;position:relative;padding-left:16px}
+.sec-head h2::before{content:"";position:absolute;left:0;top:6px;bottom:6px;width:5px;border-radius:4px;background:linear-gradient(180deg,var(--brand),var(--brand-2))}
+.sec-head p{color:var(--txt-3);font-size:13.5px}
+.more-link{font-size:13px;color:var(--cyan);border:1px solid rgba(77,208,225,.35);padding:6px 14px;border-radius:999px;white-space:nowrap;transition:.25s}
+.more-link:hover{background:rgba(77,208,225,.12);transform:translateY(-2px)}
+
+/* 导航 */
+.nav{position:sticky;top:0;z-index:60;backdrop-filter:blur(14px);background:rgba(13,20,36,.82);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;gap:22px;height:64px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:18px;letter-spacing:.5px;flex-shrink:0}
+.brand-badge{width:36px;height:36px;border-radius:11px;background:linear-gradient(135deg,var(--brand),var(--violet));display:grid;place-items:center;box-shadow:0 6px 18px rgba(255,84,112,.35)}
+.brand-badge i{width:10px;height:10px;border-radius:50%;background:#fff;display:block;box-shadow:0 0 0 4px rgba(255,255,255,.25)}
+.brand span em{font-style:normal;color:var(--brand-2)}
+.nav-links{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;flex:1}
+.nav-links::-webkit-scrollbar{display:none}
+.nav-links a{font-size:14px;color:var(--txt-2);padding:8px 13px;border-radius:10px;white-space:nowrap;transition:.2s}
+.nav-links a:hover{color:#fff;background:rgba(255,255,255,.07)}
+.nav-cta{flex-shrink:0;font-size:13.5px;font-weight:600;padding:9px 18px;border-radius:11px;background:linear-gradient(135deg,var(--brand),#ff7a8d);color:#fff;box-shadow:0 8px 20px rgba(255,84,112,.32);transition:.25s}
+.nav-cta:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(255,84,112,.42)}
+
+/* Banner */
+.hero{padding:56px 0 44px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(139,124,246,.28),transparent 70%);pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:36px;align-items:center}
+.hero-tag{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;color:var(--brand-2);border:1px solid rgba(255,209,102,.35);background:rgba(255,209,102,.08);padding:6px 14px;border-radius:999px;margin-bottom:18px}
+.hero-tag i{width:7px;height:7px;border-radius:50%;background:var(--brand-2);box-shadow:0 0 0 4px rgba(255,209,102,.18);animation:pulse 2s infinite}
+@keyframes pulse{50%{opacity:.4}}
+.hero h1{font-size:40px;line-height:1.28;letter-spacing:.5px;margin-bottom:16px}
+.hero h1 em{font-style:normal;background:linear-gradient(120deg,var(--brand),var(--brand-2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-desc{color:var(--txt-2);font-size:15.5px;max-width:640px;margin-bottom:24px}
+.searchbar{display:flex;gap:10px;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:8px;max-width:560px;box-shadow:var(--shadow)}
+.searchbar input{flex:1;background:transparent;border:0;outline:none;color:var(--txt);font-size:14.5px;padding:8px 12px}
+.searchbar input::placeholder{color:var(--txt-3)}
+.searchbar button{border:0;cursor:pointer;font-size:14px;font-weight:600;color:#fff;padding:9px 22px;border-radius:10px;background:linear-gradient(135deg,var(--brand),#ff7a8d)}
+.hero-btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.hero-btns a{font-size:13.5px;color:var(--txt-2);border:1px solid var(--line);background:rgba(255,255,255,.04);padding:8px 16px;border-radius:11px;transition:.22s}
+.hero-btns a:hover{color:#fff;border-color:rgba(255,84,112,.5);background:rgba(255,84,112,.12);transform:translateY(-2px)}
+.hero-side{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.mini-card{background:linear-gradient(160deg,var(--panel-2),var(--panel));border:1px solid var(--line);border-radius:var(--radius);padding:18px;transition:.25s}
+.mini-card:hover{transform:translateY(-4px);border-color:rgba(255,84,112,.4)}
+.mini-card b{display:block;font-size:22px;color:var(--brand-2);margin-bottom:4px}
+.mini-card span{font-size:12.5px;color:var(--txt-3)}
+
+/* 分类入口 */
+.cat-row{display:grid;grid-template-columns:repeat(8,1fr);gap:12px}
+.cat-item{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 10px;text-align:center;font-size:13.5px;color:var(--txt-2);transition:.25s;display:flex;flex-direction:column;align-items:center;gap:8px}
+.cat-item:hover{transform:translateY(-4px);color:#fff;border-color:rgba(77,208,225,.45);background:var(--panel-2)}
+.cat-dot{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;font-size:15px;background:rgba(139,124,246,.16);color:var(--violet)}
+.cat-item:nth-child(2n) .cat-dot{background:rgba(255,84,112,.16);color:var(--brand)}
+.cat-item:nth-child(3n) .cat-dot{background:rgba(77,208,225,.16);color:var(--cyan)}
+.cat-item:nth-child(5n) .cat-dot{background:rgba(255,209,102,.16);color:var(--brand-2)}
+
+/* 卡片网格 */
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.card{background:linear-gradient(165deg,var(--panel-2),var(--panel));border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:.28s;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-5px);border-color:rgba(255,84,112,.4);box-shadow:0 16px 34px rgba(0,0,0,.4)}
+.cover{height:132px;position:relative;display:flex;align-items:flex-end;padding:12px 14px;font-weight:700;font-size:15px;letter-spacing:.5px}
+.cover::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 20%,rgba(0,0,0,.55))}
+.cover span{position:relative;z-index:1;text-shadow:0 2px 8px rgba(0,0,0,.6)}
+.c1{background:linear-gradient(135deg,#3b2b6b,#8b7cf6)}
+.c2{background:linear-gradient(135deg,#5a1f34,#ff5470)}
+.c3{background:linear-gradient(135deg,#134b57,#4dd0e1)}
+.c4{background:linear-gradient(135deg,#5c4412,#ffd166)}
+.c5{background:linear-gradient(135deg,#1f3b5c,#5b8def)}
+.c6{background:linear-gradient(135deg,#4a1f5c,#c86bfa)}
+.card-body{padding:16px 16px 18px;flex:1;display:flex;flex-direction:column;gap:10px}
+.card-body h3{font-size:15.5px;line-height:1.5}
+.card-body p{font-size:13px;color:var(--txt-2);line-height:1.7}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-size:11.5px;color:var(--txt-2);background:rgba(255,255,255,.06);border:1px solid var(--line);padding:3px 9px;border-radius:999px}
+.tag.hot{color:var(--brand);border-color:rgba(255,84,112,.35);background:rgba(255,84,112,.1)}
+.tag.new{color:var(--cyan);border-color:rgba(77,208,225,.35);background:rgba(77,208,225,.1)}
+.card-meta{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--txt-3);margin-top:auto;padding-top:8px;border-top:1px dashed var(--line)}
+.card-meta b{color:var(--brand-2);font-weight:600}
+
+/* 更新列表 */
+.update-list{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.upd{display:flex;gap:14px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 16px;transition:.22s}
+.upd:hover{transform:translateX(4px);border-color:rgba(77,208,225,.4)}
+.upd-time{flex-shrink:0;font-size:12px;color:var(--cyan);border:1px solid rgba(77,208,225,.3);background:rgba(77,208,225,.08);padding:5px 10px;border-radius:9px;min-width:78px;text-align:center}
+.upd-info h4{font-size:14.5px;margin-bottom:3px}
+.upd-info p{font-size:12.5px;color:var(--txt-3);line-height:1.6}
+
+/* 正文解析 */
+.article{background:linear-gradient(170deg,var(--panel-2),var(--panel));border:1px solid var(--line);border-radius:var(--radius);padding:32px 34px}
+.article h3{font-size:18px;margin:26px 0 10px;color:var(--brand-2)}
+.article h3:first-child{margin-top:0}
+.article p{color:var(--txt-2);font-size:14.5px;margin-bottom:12px;text-align:justify}
+.article strong{color:var(--txt)}
+.article .hl{color:var(--brand);font-weight:600}
+.quote{border-left:3px solid var(--brand);background:rgba(255,84,112,.07);padding:14px 18px;border-radius:0 12px 12px 0;font-size:14px;color:var(--txt-2);margin:16px 0}
+
+/* 数据看板 */
+.stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px;text-align:center}
+.stat b{display:block;font-size:26px;color:var(--brand-2);margin-bottom:6px}
+.stat span{font-size:12.5px;color:var(--txt-3)}
+
+/* FAQ */
+.faq{display:grid;gap:12px}
+.faq-item{background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.faq-q{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:16px 20px;cursor:pointer;font-size:14.5px;font-weight:600}
+.faq-q i{color:var(--brand);font-style:normal;transition:.3s;font-size:18px;line-height:1}
+.faq-item.open .faq-q i{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease;color:var(--txt-2);font-size:13.5px}
+.faq-item.open .faq-a{max-height:320px}
+.faq-a p{padding:0 20px 18px;line-height:1.8}
+
+/* 评论 */
+.cmt-list{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.cmt{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.cmt-top{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.avatar{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-size:13px;font-weight:700;color:#fff;flex-shrink:0}
+.cmt-top b{font-size:13.5px}
+.cmt-top time{font-size:11.5px;color:var(--txt-3);margin-left:auto}
+.cmt p{font-size:13px;color:var(--txt-2);line-height:1.75}
+
+/* 资讯 */
+.news-list{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.news{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px 20px;transition:.24s}
+.news:hover{transform:translateY(-4px);border-color:rgba(255,209,102,.4)}
+.news time{font-size:11.5px;color:var(--brand-2)}
+.news h4{font-size:14.5px;margin:6px 0 8px;line-height:1.55}
+.news p{font-size:12.5px;color:var(--txt-3);line-height:1.7}
+
+/* 订阅 */
+.subscribe{background:linear-gradient(135deg,rgba(255,84,112,.16),rgba(139,124,246,.16));border:1px solid rgba(255,84,112,.3);border-radius:20px;padding:34px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.subscribe h2{font-size:22px;margin-bottom:8px}
+.subscribe p{font-size:13.5px;color:var(--txt-2)}
+.sub-form{display:flex;gap:10px;flex-wrap:wrap}
+.sub-form input{background:rgba(13,20,36,.7);border:1px solid var(--line);border-radius:11px;padding:11px 16px;color:var(--txt);outline:none;font-size:14px;min-width:220px}
+.sub-form button{border:0;cursor:pointer;background:linear-gradient(135deg,var(--brand),#ff7a8d);color:#fff;font-weight:600;padding:11px 24px;border-radius:11px;font-size:14px}
+
+/* 页脚 */
+.footer{border-top:1px solid var(--line);margin-top:40px;padding:40px 0 28px;background:rgba(0,0,0,.2)}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:28px;margin-bottom:28px}
+.foot-grid h4{font-size:14px;margin-bottom:14px;color:var(--txt)}
+.foot-grid p,.foot-grid a{font-size:12.5px;color:var(--txt-3);line-height:2}
+.foot-grid a:hover{color:var(--brand-2)}
+.foot-bottom{border-top:1px solid var(--line);padding-top:20px;font-size:12px;color:var(--txt-3);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+
+@media(max-width:960px){
+  .hero-grid{grid-template-columns:1fr}
+  .grid-3{grid-template-columns:1fr 1fr}
+  .cat-row{grid-template-columns:repeat(4,1fr)}
+  .stat-grid{grid-template-columns:repeat(2,1fr)}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .nav-links{display:none}
+}
+@media(max-width:640px){
+  .hero h1{font-size:28px}
+  .grid-3,.grid-2,.update-list,.cmt-list,.news-list{grid-template-columns:1fr}
+  .cat-row{grid-template-columns:repeat(2,1fr)}
+  .article{padding:22px 18px}
+  .sec{padding:38px 0}
+  .hero-side{grid-template-columns:1fr 1fr}
+  .subscribe{padding:24px}
+  .foot-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="/#hero">
+      <span class="brand-badge"><i></i></span>
+      <span>91<em>直播</em></span>
+    </a>
+    <div class="nav-links">
+      <a href="/#hero">首页</a>
+      <a href="/#hot-live">热门直播</a>
+      <a href="/#latest-live">最新更新</a>
+      <a href="/#category">分类入口</a>
+      <a href="/#deep-review">深度解析</a>
+      <a href="/#guide">观看指南</a>
+      <a href="/#faq">常见问题</a>
+      <a href="/#comments">观众评论</a>
+      <a href="/#news">直播资讯</a>
+    </div>
+    <a class="nav-cta" href="/#subscribe">订阅开播提醒</a>
+  </div>
+</nav>
+
+<header class="hero" id="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="hero-tag"><i></i>2026年11月7日 · 今日直播热度更新</span>
+      <h1>91直播：热门<em>直播间推荐</em>与主播互动观看指南</h1>
+      <p class="hero-desc">
+        聚合当下热度较高的91直播内容入口，按娱乐、互动、才艺、游戏、生活等方向梳理直播间看点与主播风格，帮助你在一屏之内判断哪些房间值得进、什么时段最热闹。
+      </p>
+      <p class="hero-desc">
+        页面同时整理了开播节奏、弹幕互动氛围、常见观看问题与近期动态，适合想快速了解91直播内容生态、寻找稳定观看路径的观众收藏备用。
+      </p>
+      <form class="searchbar" onsubmit="return false;">
+        <input type="text" placeholder="搜索主播昵称、直播间名称或内容类型…" aria-label="搜索直播间">
+        <button type="button">立即搜索</button>
+      </form>
+      <div class="hero-btns">
+        <a href="/#hot-live">热门直播间</a>
+        <a href="/#latest-live">今日开播</a>
+        <a href="/#category">按分类浏览</a>
+        <a href="/#deep-review">内容解析</a>
+        <a href="/#guide">观看指南</a>
+        <a href="/#faq">新手答疑</a>
+        <a href="/#comments">观众讨论</a>
+        <a href="/#news">近期资讯</a>
+      </div>
+    </div>
+    <div class="hero-side">
+      <div class="mini-card"><b>120+</b><span>在列直播间</span></div>
+      <div class="mini-card"><b>8</b><span>内容分类</span></div>
+      <div class="mini-card"><b>24h</b><span>分时段开播</span></div>
+      <div class="mini-card"><b>今日</b><span>动态持续更新</span></div>
+    </div>
+  </div>
+</header>
+
+<section class="wrap sec" id="intro">
+  <div class="sec-head">
+    <h2>关于91直播内容专题</h2>
+    <p>先了解页面结构，再决定从哪个入口进</p>
+  </div>
+  <div class="article">
+    <p><strong>91直播</strong>这个关键词背后，通常对应的是观众对“直播内容入口”和“直播间选择”的双重需求：一方面想知道有哪些正在开播、人气较高的房间，另一方面也想了解不同主播的内容风格、互动方式以及整体观看体验。本专题并不是单一的视频播放页，而是围绕91直播这一主题整理出的内容导航型落地页，把分散的直播间信息、分类入口、观看建议和观众反馈集中呈现，方便快速判断。</p>
+    <p>对于刚接触直播内容的用户来说，最容易遇到的问题不是“找不到直播”，而是“不知道哪个值得看”。平台内房间数量多、开播时间分散、主播风格差异大，如果没有一个清晰的分类框架，很容易在首页翻很久却迟迟进不了状态。本页按照娱乐互动、才艺展示、游戏陪伴、生活分享等方向做了归类，并对每个方向的内容节奏、互动强度和适合人群做了说明，读者可以对照自己的偏好直接跳到对应板块。</p>
+    <p>本页适合三类读者：第一类是偶尔观看、希望快速找到当下热门房间的轻度用户；第二类是习惯固定时段追某位主播、关注开播提醒的常驻观众；第三类是想了解直播内容生态、为内容选择做功课的新观众。无论属于哪一类，都可以从热门推荐、最新更新、深度解析和FAQ四个板块获得相对完整的信息，而不必逐个房间试看。</p>
+    <p>页面中的推荐内容、标签和更新状态会围绕91直播的主题持续整理，分类名称、看点描述和观众评论均以内容消费体验为核心，不涉及具体交易或引导性操作。建议先浏览“内容简介”和“深度解析”建立整体认知，再回到“热门推荐”和“最新更新”按兴趣筛选，这样浏览路径更顺畅，也更节省时间。</p>
+  </div>
+</section>
+
+<section class="wrap sec" id="hot-live">
+  <div class="sec-head">
+    <h2>热门直播间推荐</h2>
+    <p>按当前热度与互动活跃度整理，仅供内容参考</p>
+  </div>
+  <div class="grid-3">
+    <article class="card">
+      <div class="cover c1"><span>深夜电台·陪伴聊天</span></div>
+      <div class="card-body">
+        <h3>夜航频道·慢聊直播间</h3>
+        <div class="tags"><span class="tag hot">人气上升</span><span class="tag">聊天</span><span class="tag">陪伴</span><span class="tag">夜间档</span></div>
+        <p>以轻声聊天和听众来信为主，节奏舒缓，适合夜间放松时打开，弹幕氛围相对温和。</p>
+        <div class="card-meta"><span>热度 <b>9.2</b></span><span>每晚 22:00 开播</span></div>
+      </div>
+    </article>
+    <article class="card">
+      <div class="cover c2"><span>才艺舞台·翻唱现场</span></div>
+      <div class="card-body">
+        <h3>麦克风计划·翻唱现场</h3>
+        <div class="tags"><span class="tag hot">高互动</span><span class="tag">音乐</span><span class="tag">翻唱</span><span class="tag">点歌</span></div>
+        <p>主打华语流行翻唱，支持弹幕点歌，主播会根据观众投票临时调整歌单，现场感较强。</p>
+        <div class="card-meta"><span>热度 <b>8.8</b></span><span>20:30 开播</span></div>
+      </div>
+    </article>
+    <article class="card">
+      <div class="cover c3"><span>游戏陪伴·上分实录</span></div>
+      <div class="card-body">
+        <h3>峡谷夜行者·排位实录</h3>
+        <div class="tags"><span class="tag new">新晋热门</span><span class="tag">游戏</span><span class="tag">解说</span><span class="tag">连麦</span></div>
+        <p>以多人竞技游戏排位为主，边打边讲思路，偶尔开放连麦，适合想学操作细节的观众。</p>
+        <div class="card-meta"><span>热度 <b>8.6</b></span><span>19:00 开播</span></div>
+      </div>
+    </article>
+    <article class="card">
+      <div class="cover c4"><span>生活分享·厨房日常</span></div>
+      <div class="card-body">
+        <h3>一人食研究所·厨房直播</h3>
+        <div class="tags"><span class="tag">生活</span><span class="tag">美食</span><span class="tag">慢节奏</span></div>
+        <p>记录晚餐制作过程，边做边聊食材与城市生活，画面干净，适合下饭时观看。</p>
+        <div class="card-meta"><span>热度 <b>8.1</b></span><span>18:00 开播</span></div>
+      </div>
+    </article>
+    <article class="card">
+      <div class="cover c5"><span>知识分享·热点闲聊</span></div>
+      <div class="card-body">
+        <h3>晚间议题·话题讨论间</h3>
+        <div class="tags"><span class="tag hot">讨论热烈</span><span class="tag">话题</span><span class="tag">连麦</span><span class="tag">观点</span></div>
+        <p>围绕近期热点话题展开讨论，观众可通过弹幕提问，适合喜欢听不同观点的用户。</p>
+        <div class="card-meta"><span>热度 <b>7.9</b></span><span>21:00 开播</span></div>
+      </div>
+    </article>
+    <article class="card">
+      <div class="cover c6"><span>舞蹈展示·节奏现场</span></div>
+      <div class="card-body">
+        <h3>节拍实验室·舞蹈直播</h3>
+        <div class="tags"><span class="tag new">推荐关注</span><span class="tag">舞蹈</span><span class="tag">才艺</span><span class="tag">音乐</span></div>
+        <p>以流行舞段展示和基础教学为主，镜头切换节奏快，适合喜欢舞台表现的观众。</p>
+        <div class="card-meta"><span>热度 <b>7.7</b></span><span>20:00 开播</span></div>
+      </div>
+    </article>
+    <article class="card">
+      <div class="cover c2"><span>户外连线·城市漫步</span></div>
+      <div class="card-body">
+        <h3>城市漫游者·户外连线</h3>
+        <div class="tags"><span class="tag">户外</span><span class="tag">连线</span><span class="tag">城市</span></div>
+        <p>在步行与移动中展示城市街景，随机与路人互动，画面变化丰富，适合边做别的事边听。</p>
+        <div class="card-meta"><span>热度 <b>7.5</b></span><span>周末不定时</span></div>
+      </div>
+    </article>
+    <article class="card">
+      <div class="cover c1"><span>闲聊综艺·多人连麦</span></div>
+      <div class="card-body">
+        <h3>八点茶话会·多人连麦</h3>
+        <div class="tags"><span class="tag hot">氛围轻松</span><span class="tag">连麦</span><span class="tag">闲聊</span><span class="tag">综艺感</span></div>
+        <p>多位主播同时在线，围绕固定小游戏和话题展开，互动密度高，适合想看热闹的用户。</p>
+        <div class="card-meta"><span>热度 <b>7.4</b></span><span>20:00 开播</span></div>
+      </div>
+    </article>
+    <article class="card">
+      <div class="cover c3"><span>手工创作·安静向</span></div>
+      <div class="card-body">
+        <h3>手作慢时光·创作直播</h3>
+        <div class="tags"><span class="tag">手工</span><span class="tag">安静</span><span class="tag">创作</span></div>
+        <p>以绘画、拼装等手工过程为主，讲解细致，弹幕节奏慢，适合喜欢专注氛围的观众。</p>
+        <div class="card-meta"><span>热度 <b>7.2</b></span><span>下午档</span></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="wrap sec" id="latest-live">
+  <div class="sec-head">
+    <h2>最新更新与开播动态</h2>
+    <p>截至2026年11月7日的开播与内容变动整理</p>
+  </div>
+  <div class="update-list">
+    <div class="upd"><span class="upd-time">今日 21:40</span><div class="upd-info"><h4>夜航频道·慢聊直播间</h4><p>新增听众来信环节，本期主题为“最近一次改变决定的瞬间”。</p></div></div>
+    <div class="upd"><span class="upd-time">今日 20:55</span><div class="upd-info"><h4>麦克风计划·翻唱现场</h4><p>歌单更新，新增三首粤语曲目，点歌投票同步开放。</p></div></div>
+    <div class="upd"><span class="upd-time">今日 20:10</span><div class="upd-info"><h4>峡谷夜行者·排位实录</h4><p>开启双人连麦模式，直播时长预计延长一小时。</p></div></div>
+    <div class="upd"><span class="upd-time">今日 19:30</span><div class="upd-info"><h4>八点茶话会·多人连麦</h4><p>本周固定游戏环节调整，改为观众出题形式。</p></div></div>
+    <div class="upd"><span class="upd-time">今日 18:20</span><div class="upd-info"><h4>一人食研究所·厨房直播</h4><p>本期改良家常菜做法，附带食材替换建议。</p></div></div>
+    <div class="upd"><span class="upd-time">今日 17:00</span><div class="upd-info"><h4>手作慢时光·创作直播</h4><p>开启系列作品第二期，画面机位调整为俯拍。</p></div></div>
+    <div class="upd"><span class="upd-time">11月6日</span><div class="upd-info"><h4>晚间议题·话题讨论间</h4><p>话题征集结束，本轮共收到两百余条观众提问。</p></div></div>
+    <div class="upd"><span class="upd-time">11月6日</span><div class="upd-info"><h4>节拍实验室·舞蹈直播</h4><p>新增基础教学片段，适合零基础观众跟练。</p></div></div>
+    <div class="upd"><span class="upd-time">11月5日</span><div class="upd-info"><h4>城市漫游者·户外连线</h4><p>周末户外场预告发布，路线涉及两处城市地标。</p></div></div>
+    <div class="upd"><span class="upd-time">11月4日</span><div class="upd-info"><h4>综合频道整体调整</h4><p>部分直播间开播时间前移半小时，建议关注提醒更新。</p></div></div>
+  </div>
+</section>
+
+<section class="wrap sec" id="category">
+  <div class="sec-head">
+    <h2>内容分类入口</h2>
+    <p>按偏好快速定位想看的直播方向</p>
+  </div>
+  <div class="cat-row">
+    <a class="cat-item" href="/#hot-live"><span class="cat-dot">聊</span>聊天陪伴</a>
+    <a class="cat-item" href="/#hot-live"><span class="cat-dot">艺</span>才艺展示</a>
+    <a class="cat-item" href="/#hot-live"><span class="cat-dot">游</span>游戏电竞</a>
+    <a class="cat-item" href="/#hot-live"><span class="cat-dot">乐</span>音乐现场</a>
+    <a class="cat-item" href="/#hot-live"><span class="cat-dot">舞</span>舞蹈表演</a>
+    <a class="cat-item" href="/#hot-live"><span class="cat-dot">生</span>生活日常</a>
+    <a class="cat-item" href="/#hot-live"><span class="cat-dot">外</span>户外连线</a>
+    <a class="cat-item" href="/#hot-live"><span class="cat-dot">谈</span>话题讨论</a>
+  </div>
+</section>
+
+<section class="wrap sec" id="deep-review">
+  <div class="sec-head">
+    <h2>深度解析：91直播内容生态怎么理解</h2>
+    <p>从内容结构、互动方式到观看节奏的一次梳理</p>
+  </div>
+  <div class="article">
+    <h3>一、直播内容的类型分布与节奏差异</h3>
+    <p>围绕<strong>91直播</strong>展开的内容，整体呈现“类型多、时段分散、互动强”的特点。聊天陪伴类偏向稳定输出，主播多以固定时段开播，内容围绕日常话题、听众来信或轻量互动展开，节奏舒缓，适合作为背景音或夜间放松的选择；才艺展示类则更强调现场感，翻唱、舞蹈、乐器演奏等方向往往有明确的节目单或歌单安排，观众参与点集中在点歌、投票和实时点评上；游戏类直播的核心是过程解说与操作展示，节奏快、信息密度高，适合有明确学习或娱乐目标的观众。</p>
+    <p>生活日常与户外连线属于“画面驱动型”内容，前者依赖场景与细节，后者依赖环境变化与随机互动，观看体验更接近陪伴式记录。话题讨论类直播则介于聊天与综艺之间，通常有固定议题和连麦机制，观众通过弹幕提问参与，内容走向受现场反馈影响较大。理解这些差异之后，再去看91直播的分类入口，就会更容易判断某个房间是否符合自己的观看习惯。</p>
+    <h3>二、主播风格与互动方式</h3>
+    <p>直播内容的质量，很大程度上取决于主播对节奏的把控。以本页整理的几个方向为例：慢聊类主播擅长接住弹幕情绪，把零散提问串成完整话题；才艺类主播需要在表演与互动之间切换，避免长时间冷场；游戏类主播则要兼顾操作与讲解，让不懂规则的观众也能跟上。观众在选择91直播房间时，可以先用几分钟观察主播是否回应弹幕、是否主动推进话题，这比单纯看热度数字更能判断长期观看意愿。</p>
+    <div class="quote">一个实用的判断方法：进入房间后先看三分钟，如果主播在这段时间内至少完成一次有效互动（回应提问、解释内容、引导话题），通常说明这个房间的互动氛围是可持续的。</div>
+    <h3>三、观看节奏与适合人群</h3>
+    <p>不同观众对直播的期待并不相同。有人希望获得高密度娱乐刺激，适合多人连麦、游戏对抗、综艺感强的房间；有人希望放松和陪伴，适合慢聊、手工、厨房日常这类节奏平缓的内容；也有人把直播当作信息渠道，倾向于话题讨论和知识分享类房间。91直播的内容覆盖面较广，关键在于先明确自己的观看目的，再按分类筛选，而不是盲目跟随热度榜单。</p>
+    <p>从时间维度看，晚间八点到十一点是开播最集中的区间，也是互动最活跃的时段；下午档和深夜档则相对安静，适合不喜欢弹幕刷屏的观众。对于习惯固定追某位主播的用户，关注开播提醒比反复刷新页面更有效率，本页的更新板块也会同步整理时间调整信息。</p>
+    <h3>四、同类内容比较与选择建议</h3>
+    <p>如果把91直播与常见的综合直播平台放在一起比较，它的内容组织更偏向“房间制”与“主播个人风格”，观众黏性来自对具体主播的认可，而不是单一节目。这意味着选择成本主要发生在“找房间”阶段，一旦找到合适的主播，后续观看路径会相对稳定。因此，本页把热门推荐、分类入口和深度解析放在靠前位置，正是为了缩短这一段筛选过程。</p>
+    <p>对于搜索“91直播”这个词的读者来说，常见意图包括：想了解有哪些正在开播的房间、想知道某个分类下有哪些代表主播、想确认观看方式与互动规则、想找稳定的内容入口。本页围绕这些意图做了对应板块，建议按“简介—热门—分类—解析—FAQ”的顺序浏览，信息获取效率更高。需要说明的是，页面内容以内容导航与观看参考为主，具体房间状态以实际开播情况为准。</p>
+  </div>
+</section>
+
+<section class="wrap sec" id="guide">
+  <div class="sec-head">
+    <h2>观看体验指南</h2>
+    <p>让浏览路径更清晰的一些建议</p>
+  </div>
+  <div class="grid-3">
+    <div class="card"><div class="card-body"><h3>先分类，再看热度</h3><p>直接按热度排序容易进入不适合自己的房间，先确定内容类型再看热度，筛选效率更高。</p></div></div>
+    <div class="card"><div class="card-body"><h3>关注开播时间</h3><p>直播与点播最大的区别是时效性，固定时段的主播建议提前设置提醒，避免错过开场。</p></div></div>
+    <div class="card"><div class="card-body"><h3>观察互动氛围</h3><p>弹幕节奏、主播回应频率、观众讨论质量，是判断房间是否适合长期观看的重要依据。</p></div></div>
+    <div class="card"><div class="card-body"><h3>移动端优先</h3><p>本页采用响应式布局，手机上可单列阅读，卡片和列表在窄屏下仍保持清晰层级。</p></div></div>
+    <div class="card"><div class="card-body"><h3>善用相关推荐</h3><p>从一个房间延伸到同类主播，是扩展观看路径的常见方式，也能减少重复筛选。</p></div></div>
+    <div class="card"><div class="card-body"><h3>保持合理预期</h3><p>直播内容存在不确定性，节目安排可能临时调整，以实际开播内容为准更稳妥。</p></div></div>
+  </div>
+</section>
+
+<section class="wrap sec" id="stats">
+  <div class="sec-head">
+    <h2>内容数据看板</h2>
+    <p>基于本页整理范围的模拟统计</p>
+  </div>
+  <div class="stat-grid">
+    <div class="stat"><b>120+</b><span>收录直播间</span></div>
+    <div class="stat"><b>8</b><span>内容分类</span></div>
+    <div class="stat"><b>19:00</b><span>开播高峰起点</span></div>
+    <div class="stat"><b>24h</b><span>动态更新覆盖</span></div>
+  </div>
+</section>
+
+<section class="wrap sec" id="faq">
+  <div class="sec-head">
+    <h2>常见问题解答</h2>
+    <p>围绕91直播与观看选择的典型疑问</p>
+  </div>
+  <div class="faq">
+    <div class="faq-item open">
+      <div class="faq-q">91直播主要包含哪些类型的内容？<i>+</i></div>
+      <div class="faq-a"><p>从本页整理的范围看，主要覆盖聊天陪伴、才艺展示、游戏电竞、音乐现场、舞蹈表演、生活日常、户外连线和话题讨论八个方向。不同类型在节奏和互动方式上差异明显，建议先按分类浏览，再进入具体房间观察几分钟，判断是否符合自己的观看习惯。</p></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">第一次看直播，应该从哪类内容入手？<i>+</i></div>
+      <div class="faq-a"><p>如果只是想熟悉直播的互动方式，可以从慢聊或生活日常类开始，这类内容节奏平缓、弹幕压力小，容易跟上；如果希望内容更密集，可以选择才艺展示或多人才艺连麦。游戏类对规则理解有一定要求，建议先看解说型房间再考虑深度观看。</p></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">怎么判断一个直播间是否值得长期关注？<i>+</i></div>
+      <div class="faq-a"><p>可以看三个维度：主播是否稳定开播、是否主动回应弹幕、内容是否有持续更新的主题。稳定开播意味着观看预期可控，主动互动说明房间氛围可持续，主题明确则能减少每次进入时的陌生感。热度数字只能作为参考，不宜作为唯一标准。</p></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">直播间的开播时间会经常变动吗？<i>+</i></div>
+      <div class="faq-a"><p>会有变动。主播可能因个人安排、节目调整或临时活动修改时间，部分房间还会在周末增加特别场次。本页的更新板块会整理已公布的时间调整信息，但具体仍以实际开播为准，习惯固定观看的用户建议开启提醒功能。</p></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">页面里的推荐内容是实时排名吗？<i>+</i></div>
+      <div class="faq-a"><p>不是严格意义上的实时榜单。本页的推荐与热度标注是基于整理时点的内容参考，用于帮助读者快速了解大致分布，并不代表精确排名。直播热度本身波动较大，建议把它当作筛选线索，而不是结论。</p></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">手机上浏览这个页面体验如何？<i>+</i></div>
+      <div class="faq-a"><p>页面采用响应式布局，手机端会自动切换为单列或双列结构，卡片、列表和常见问题模块都做了窄屏适配，文字大小与间距以保证可读性为主。由于没有引入外部图片和字体资源，移动网络下的加载负担相对较小，适合随时打开浏览。</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap sec" id="comments">
+  <div class="sec-head">
+    <h2>观众评论与讨论</h2>
+    <p>近期观众对91直播相关内容的真实反馈整理</p>
+  </div>
+  <div class="cmt-list">
+    <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#8b7cf6">林</span><b>林间有风</b><time>11月6日</time></div><p>夜航频道那档慢聊真的适合睡前听，主播说话不急，弹幕也不吵，比刷短视频放松多了。</p></div>
+    <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#ff5470">阿</span><b>阿澈不熬夜</b><time>11月6日</time></div><p>翻唱那个房间点歌机制挺有意思，但热门歌排队太长了，想听的经常等不到，建议错峰进。</p></div>
+    <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#4dd0e1">小</span><b>小满同学</b><time>11月5日</time></div><p>游戏区解说水平参差，有的主播只顾自己打，完全不管弹幕问什么，看十分钟就退了。</p></div>
+    <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#ffd166">陈</span><b>陈年旧磁带</b><time>11月5日</time></div><p>一人食那个厨房直播画面很干净，做饭过程不吵，适合吃饭的时候放着，已经追了快两周。</p></div>
+    <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#5b8def">晚</span><b>晚风收信人</b><time>11月5日</time></div><p>话题讨论间偶尔会跑题，但整体还算有内容，比纯刷礼物的房间有意思，希望能固定议题。</p></div>
+    <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#c86bfa">橘</span><b>橘子汽水味</b><time>11月4日</time></div><p>舞蹈直播镜头切得有点快，看久了眼睛累，不过教学片段做得不错，跟练过两次。</p></div>
+    <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#ff7a8d">不</span><b>不想起床的鱼</b><time>11月4日</time></div><p>多人连麦那档挺热闹，就是有时候几个人同时说话听不清，建议主播控制一下节奏。</p></div>
+    <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#4dd0e1">山</span><b>山野来信</b><time>11月3日</time></div><p>户外连线比想象中有趣，随机遇到的人和事比剧本化的内容自然，就是信号偶尔不稳。</p></div>
+    <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#8b7cf6">半</span><b>半糖不加冰</b><time>11月3日</time></div><p>这个页面分类挺清楚的，之前找直播都是乱翻，现在按类型点进去省了不少时间。</p></div>
+    <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#ffd166">周</span><b>周末不加班</b><time>11月2日</time></div><p>手作直播节奏很慢，但胜在安静，适合写东西的时候当背景，主播讲解也细致。</p></div>
+    <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#ff5470">柚</span><b>柚子茶半杯</b><time>11月2日</time></div><p>更新提醒这块做得可以，至少能知道常看的主播今天开不开，不用反复刷。</p></div>
+    <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#5b8def">深</span><b>深海不蓝</b><time>11月1日</time></div><p>热度高的房间不一定适合自己，进去几次发现还是冷门一点的小房间聊得舒服。</p></div>
+    <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#c86bfa">南</span><b>南巷旧灯</b><time>11月1日</time></div><p>才艺类主播如果能提前公布歌单就好了，现在都是进房间才知道今天唱什么。</p></div>
+    <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#4dd0e1">一</span><b>一只椰子冻</b><time>10月31日</time></div><p>整体看下来生活类内容质量比预期高，反而是几个标着热门的房间有点名不副实。</p></div>
+    <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#8b7cf6">慢</span><b>慢速快门</b><time>10月30日</time></div><p>希望后续能加上按开播时间筛选，现在分类有了，但时间维度还得自己一个个看。</p></div>
+    <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#ffd166">北</span><b>北岸咖啡馆</b><time>10月29日</time></div><p>评论区提到的几个房间都去看了下，慢聊和厨房日常确实符合描述，没有过度包装。</p></div>
+  </div>
+</section>
+
+<section class="wrap sec" id="news">
+  <div class="sec-head">
+    <h2>相关资讯</h2>
+    <p>围绕91直播内容方向的近期动态整理</p>
+  </div>
+  <div class="news-list">
+    <article class="news"><time>2026年11月7日</time><h4>晚间档开播时间整体前移，观众观看习惯出现变化</h4><p>多个直播间将开播时间调整至19:00至20:00之间，业内认为与观众晚间碎片时间前移有关，建议关注提醒更新。</p></article>
+    <article class="news"><time>2026年11月6日</time><h4>才艺类直播点歌互动形式持续升温</h4><p>以弹幕投票和歌单共创为核心的互动方式，正在成为才艺直播间提升参与度的常用手段，观众留存表现相对稳定。</p></article>
+    <article class="news"><time>2026年11月5日</time><h4>生活类直播内容关注度上升，慢节奏成为关键词</h4><p>厨房、手工、日常记录类内容的观看时长有所增长，部分观众表示更倾向安静、可长时间陪伴的直播形式。</p></article>
+    <article class="news"><time>2026年11月4日</time><h4>多人连麦直播的节奏控制引发讨论</h4><p>观众反馈多人同时发言容易造成信息混乱，部分主播开始引入轮流发言和主持机制，以改善收听体验。</p></article>
+    <article class="news"><time>2026年11月2日</time><h4>游戏直播解说质量成为观众选择的重要参考</h4><p>相比单纯的操作展示，能讲清思路、回应弹幕的解说型房间更受欢迎，观众对内容密度的要求有所提高。</p></article>
+    <article class="news"><time>2026年10月30日</time><h4>户外连线类内容在周末时段表现活跃</h4><p>随机互动和场景变化带来的不确定性，成为户外直播的看点之一，但画面稳定性仍是观众反馈中提及较多的问题。</p></article>
+  </div>
+</section>
+
+<section class="wrap sec" id="subscribe">
+  <div class="subscribe">
+    <div>
+      <h2>订阅开播提醒与内容更新</h2>
+      <p>填写邮箱，获取91直播相关分类动态、开播时间调整与推荐内容整理的定期汇总。</p>
+    </div>
+    <form class="sub-form" onsubmit="return false;">
+      <input type="email" placeholder="your@email.com" aria-label="邮箱地址">
+      <button type="button">订阅更新</button>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="/#hero" style="margin-bottom:14px">
+          <span class="brand-badge"><i></i></span>
+          <span>91<em>直播</em></span>
+        </a>
+        <p>91直播内容专题页，围绕直播间推荐、分类入口、观看指南与观众反馈进行整理，为内容选择提供参考。</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <p><a href="/#hot-live">热门直播间</a></p>
+        <p><a href="/#latest-live">最新更新</a></p>
+        <p><a href="/#category">分类入口</a></p>
+        <p><a href="/#deep-review">深度解析</a></p>
+      </div>
+      <div>
+        <h4>帮助与反馈</h4>
+        <p><a href="/#guide">观看指南</a></p>
+        <p><a href="/#faq">常见问题</a></p>
+        <p><a href="/#comments">观众评论</a></p>
+        <p><a href="/#news">相关资讯</a></p>
+      </div>
+      <div>
+        <h4>友情链接</h4>
+        <p>内容合作入口（占位）</p>
+        <p>直播分类索引（占位）</p>
+        <p>观众交流社区（占位）</p>
+        <p>内容纠错反馈（占位）</p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 91直播内容专题 · 本站为内容导航与信息整理页面，不提供直播信号。</span>
+      <span>免责声明：页面内容以观看参考为主，具体直播状态以实际开播情况为准。</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var items=document.querySelectorAll('.faq-item');
+  items.forEach(function(it){
+    it.querySelector('.faq-q').addEventListener('click',function(){
+      var open=it.classList.contains('open');
+      items.forEach(function(o){o.classList.remove('open')});
+      if(!open){it.classList.add('open')}
+    });
+  });
+})();
+</script>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</body>
+                                                                                                            </html>
